@@ -11,7 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan({"nearsoft.iot"})
 public class Application {
 
+    Long a;
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+        Application ap = new Application();
+        System.out.println(ap.a);
     }
 }
